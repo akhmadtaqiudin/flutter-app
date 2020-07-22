@@ -68,4 +68,34 @@ class MyItemPage extends StatefulWidget{
   _MyItemsPageState createState() => _MyItemsPageState();
 }
 
-class _MyItemsPageState extends State
+class _MyItemsPageState extends State<MyItemPage>{
+  @override
+  Widget build(BuildContext context) {
+    var button = new IconButton(icon: new Icon(Icons.arrow_back), onPressed: _onButtonPressed);
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text(widget.title),
+      ),
+      body: new Container(
+        child: new Column(
+          children: <Widget>[
+            new Text('Flutter'),
+            new Text('Fruite'),
+            button
+          ],
+        ),
+      ),
+      floatingActionButton: new FloatingActionButton(
+        onPressed: _onFloatingActionButtonPressed,
+        tooltip: 'Add',
+        child: new Icon(Icons.add)),
+    );
+  }
+
+  void _onFloatingActionButtonPressed(){}
+
+  void _onButtonPressed(){
+    Navigator.pop(context);
+  }
+  
+}
