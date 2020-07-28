@@ -5,7 +5,7 @@ import 'third/thirdPage.dart' as third;
 
 class MyTabs extends StatefulWidget {
   @override
-  MyTabsState() createState() => new MyTabsState();
+  MyTabsState createState() => new MyTabsState();
 }
 
 class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
