@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
-// import 'button/button.dart';
-// import 'basic_navigation_and_routes/route_statefull.dart';
-// import 'basic_navigation_and_routes/route_stateless.dart';
-import 'onchanged/onchanged.dart';
+import 'navigation/nav.dart';
 
 void main(){
   runApp(new MaterialApp(
-    // home: new MyHome()
-    // home: new AwesomeButton()
     // home: new HomePage(),
     // routes: <String, WidgetBuilder>{
     //   "/SecondPage": (BuildContext context) => new SecondPage()
     // },
-    home: new MyTextInput()
+    home: new MyTabs()
   ));
 }
 
