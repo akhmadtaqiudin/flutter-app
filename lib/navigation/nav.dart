@@ -26,18 +26,18 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Pages"), backgroundColor: Colors.deepPurpleAccent,
-      bottom: new TabBar(
-        controller: controller,
-        tabs: <Tab>[
-          new Tab(icon: new Icon(Icons.arrow_forward)),
-          new Tab(icon: new Icon(Icons.arrow_downward)),
-          new Tab(icon: new Icon(Icons.arrow_back))
-        ])
+      appBar: new AppBar(title: new Text("Pages"), backgroundColor: Colors.teal,
+//      bottom: new TabBar(
+//        controller: controller,
+//        tabs: <Tab>[
+//          new Tab(icon: new Icon(Icons.arrow_forward)),
+//          new Tab(icon: new Icon(Icons.arrow_downward)),
+//          new Tab(icon: new Icon(Icons.arrow_back))
+//        ])
       ),
 
       bottomNavigationBar: new Material(
-        color: Colors.deepPurpleAccent,
+        color: Colors.teal,
         child: new TabBar(
           controller: controller,
           tabs: <Tab>[
